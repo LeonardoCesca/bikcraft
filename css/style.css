@@ -49,6 +49,16 @@ p {
     margin: 8px auto;
 }
 
+.call-btn{
+    text-align: center;
+    padding-top: 40px;
+    clear: both;
+}
+
+.call-btn p {
+    margin-bottom: 20px;
+}
+
 /* Header */
 
 .header {
@@ -177,12 +187,26 @@ p {
     padding: 10px 20px 20px 20px;
 }
 
-.products__btn {
-    text-align: center;
-    padding-top: 40px;
-    clear: both;
+/* Portfólio */
+
+.portfolio {
+    background: #000;
+    width: 100%;
+    padding: 40px 0;
 }
 
-.products__btn p {
-    margin-bottom: 20px;
+.portfolio .subtitle {
+    color: #fec63e;
+}
+
+.portfolio .subtitle:after {
+    background: #fec63e;
+}
+
+.portfolio__list li:last-child {
+    margin-top: 20px;
+}
+
+.portfolio .call-btn p {
+    color: #fff;
 }

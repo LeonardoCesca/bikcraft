@@ -7,7 +7,7 @@
     padding-top: 60px;
 }
 
-.product-item h2{
+.product-item h2 {
     position: relative;
     top: -180px;
     font-size: 36px;
@@ -27,7 +27,6 @@
     background: #fff;
     margin: 6px auto 10px auto;
 }
-
 
 .product-item h2::before {
     content: '';
@@ -81,4 +80,104 @@
     margin-left: 2px;
 }
 
+/* Budget */
 
+.budget {
+    background-color: #000;
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.budget h2 {
+    color: #fec63f;
+}
+
+.budget h2::after {
+    background: #fec63f;
+}
+
+.form-budget {
+    padding-right: 60px;
+}
+
+.form-budget label {
+    display: block;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.form-budget input {
+    display: block;
+    width: 100%;
+    border: 4px solid #fec63f;
+    background: none;
+    color: #fff;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-budget textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid #fec63f;
+    background: none;
+    color: #fff;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-budget button {
+    background: none;
+    padding: 7px 40px;
+}
+
+.budget__data {
+    color: #fff;
+}
+
+.budget__data h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fec63f;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.budget__data span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.budget__email {
+    margin-bottom: 40px;
+}
+
+.budget__data ul {
+    padding-right: 60px;
+}
+
+.budget__data ul li {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px 15px;
+}
+
+.budget__data ul li:nth-child(odd) {
+   background: #1d1d1d;
+}
+
+.budget__data p {
+    margin: 8px 8px;
+}

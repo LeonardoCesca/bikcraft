@@ -125,17 +125,23 @@
 	<section class="budget">
 		<div class="container">
 			<h2 class="subtitle">Orçamento</h2>
-			<form id="form-orcamento" class="form-budget grid-8">
-				<label for="name">Nome</label>
-				<input type="text" id="name">
-				<label for="email">Email</label>
-				<input type="text" id="email">
-				<label for="tel">Telefone</label>
-				<input type="text" id="tel">
-				<label for="msg">Mensagem</label>
-				<textarea id="msg"></textarea>
-				<button type="submit" class="btn">Enviar</button>
+			
+			<form action="enviar.php" method="post" name="form" class="formphp form-budget grid-8">
+				<label for="nome">Nome</label>
+				<input id="nome" name="nome" type="text">
+				<label for="email">E-mail</label>
+				<input id="email" name="email" type="text">
+				<label for="telefone">Telefone</label>
+				<input id="telefone" name="telefone" type="text">
+				<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+				<input type="text" class="nao-aparece" name="leaveblank">
+				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+				<input type="text" class="nao-aparece" name="dontchange" value="http://" >
+				<label for="mensagem">Mensagem</label>
+				<textarea name="mensagem" id="mensagem"></textarea>
+				<button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
 			</form>
+
 			<div class="budget__data grid-8">
 				<h3>Dados</h3>
 				<span>+55 21 93223 3232</span>
@@ -210,6 +216,7 @@
 	<script src="./js/libs/visibility-1.2.1.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/formulario.js"></script>
 </body>
 
 </html>

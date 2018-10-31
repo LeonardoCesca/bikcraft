@@ -4,11 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Bikcraft - Portfólio</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/portfolio.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -44,23 +44,55 @@
 	</section>
 
 	<section class="container">
-		<blockquote class="quote-clients">
-			<p>No mundo atual, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.</p>
-			<cite>Barbara Moss</cite>
-		</blockquote>
+		<ul class="rslides">
+			<li>
+				<blockquote class="quote-clients">
+					<p>No mundo atual, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da
+						qual fazemos parte.</p>
+					<cite>Barbara Moss</cite>
+				</blockquote>
+			</li>
+			<li>
+				<blockquote class="quote-clients">
+					<p>Do mundo atual, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da
+						qual fazemos parte.</p>
+					<cite>Bernardo</cite>
+				</blockquote>
+			</li>
+			<li>
+				<blockquote class="quote-clients">
+					<p>No mundo recente, a continua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora
+						da qual fazemos parte.</p>
+					<cite>Jonny Rato</cite>
+				</blockquote>
+			</li>
+		</ul>
 	</section>
 
 	<section class="portfolio">
 		<div class="container">
-			<ul class="portfolio__list">
-				<li class="grid-8">
-					<img src="./img/portfolio/retro.jpg" alt="bicicleta retro">
+			<ul class="portfolio__list rslides__portfolio">
+				<li>
+					<div class="grid-8">
+						<img src="./img/portfolio/retro.jpg" alt="bicicleta retro">
+					</div>
+					<div class="grid-8">
+						<img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio">
+					</div>
+					<div class="grid-16 space-anything">
+						<img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte">
+					</div>
 				</li>
-				<li class="grid-8">
-					<img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio">
-				</li>
-				<li class="grid-16">
-					<img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte">
+				<li>
+					<div class="grid-8">
+						<img src="./img/portfolio/passeio.jpg" alt="bicicleta passeio">
+					</div>
+					<div class="grid-8">
+						<img src="./img/portfolio/retro.jpg" alt="bicicleta retro">
+					</div>
+					<div class="grid-16 space-anything">
+						<img src="./img/portfolio/esporte.jpg" alt="bicicleta esporte">
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -118,6 +150,17 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/libs/jquery-3.3.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		$(function () {
+			$(".rslides").responsiveSlides();
+		});
+	</script>
+
 </body>
 
 </html>
